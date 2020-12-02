@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Cascadia;
+    src:url(./font/Cascadia.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cascadia';
+}
+.container{
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 17px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info p{
+    padding-left: 20px;
+}
+textarea{
+    font-family: 'Cascadia';
+    font-size: 18px;
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    position: relative;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 3px;
+}
+textarea:focus{
+    border: 1.5px solid orange;
+}
+
+.buttons{
+    padding: 10px 0;
+    font-family: 'Cascadia';
+    font-weight: 500;
+}
+input[type='button']{
+    padding: 2px 4px;
+    font-size: 14px;
+    margin: 10px 0;
+    font-family: 'Cascadia';
+    font-weight: lighter;
+}
+@media only screen and (max-width:660px){
+    textarea{
+        width: 460px;
+    }
+}
