@@ -9,7 +9,7 @@ body{
 }
 .container{
     margin: auto;
-    margin-top: 60px;
+    margin-top: 6%;
     text-align: center;
     font-size: 17px;
 }
@@ -21,6 +21,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    cursor: none;
 }
 .info p{
     padding-left: 20px;
@@ -51,6 +52,36 @@ input[type='button']{
     margin: 10px 0;
     font-family: 'Cascadia';
     font-weight: lighter;
+    cursor: pointer;
+    background-color: rgba(135, 207, 235, 0.753);
+    outline: none;
+    border: 1px solid rgb(10, 205, 219);
+    border-radius: 3px;
+}
+
+#lang_detecter{
+    display: none;
+}
+#clear{
+    background-color: rgba(189, 49, 107, 0.603);
+    outline: none;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#lang_detecter #lang_html{
+    color: rgb(168, 10, 129);
+    display: none;
+}
+#lang_detecter #lang_php{
+    color: rgb(12, 46, 199);
+    display: none;
+}
+#lang_detecter #lang_javascript{
+    color: rgb(168, 94, 10);
+    display: none;
 }
 @media only screen and (max-width:660px){
     textarea{
